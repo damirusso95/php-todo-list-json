@@ -17,14 +17,19 @@
 <body>
 
     <div id="app">
-        <h1>da fare:</h1>
-        <ul>
-            <li v-for="todo in list">
-                {{ todo.task}}
-            </li>
-        </ul>
-
-
+        <h1>Da fare:</h1>
+        <table class="todo-table">
+            <thead>
+                <tr>
+                    <th><h2>TASK</h2></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="todo in list">
+                    <td>{{ todo.task }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <!-- js -->
@@ -32,3 +37,4 @@
 </body>
 
 </html>
+
