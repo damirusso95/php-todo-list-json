@@ -1,0 +1,22 @@
+[
+    {
+        "task": "Sistemare il letto",
+        "fatto": true
+    },
+    {
+        "task": "fare il bucato",
+        "fatto": false
+    },
+    {
+        "task": "Sistemare il letto",
+        "fatto": true
+    },
+    {
+        "task": "fare il bucato",
+        "fatto": false
+    },
+    {
+        "task": "cucinare",
+        "fatto": false
+    }
+]

@@ -1,37 +1,14 @@
 <?php
 
-// array
-$todo = [
-    [
-       'task' => 'Sistemare il letto',
-       'fatto' => true
-
-    ],
-
-    [
-        'task' => 'fare il bucato',
-        'fatto' => false
- 
-    ],
-
-    [
-        'task' => 'Studiare',
-        'fatto' => true
- 
-    ],
-
-    [
-        'task' => 'fare la spesa',
-        'fatto' => false
- 
-    ],
-    
-    
-    
-];
+// metodo che recupere e restituisce il contenuto del file
+$fileContent = file_get_contents("dati.json");
 
 header('content-type: application/json');
 
-$jsonString = json_encode($todo);
+echo $fileContent;
 
-echo $jsonString;
+
+
+// $jsonString = json_encode($todo);
+
+// echo $jsonString;
