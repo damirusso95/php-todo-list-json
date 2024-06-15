@@ -25,11 +25,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="todo in list">
-                    <td>{{ todo.task }} {{ todo.fatto}}</td>
+                <tr v-for="todo in list" :key="todo.id">
+                    <td>{{ todo.task }} {{ todo.fatto }}</td>
                 </tr>
             </tbody>
         </table>
+        <input placeholder="Nuova attività" v-model="newTask" />
+        <button @click="addTask">Aggiungi</button>
     </div>
 
     <!-- js -->
@@ -37,4 +39,3 @@
 </body>
 
 </html>
-
